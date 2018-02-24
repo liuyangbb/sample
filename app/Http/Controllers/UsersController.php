@@ -35,13 +35,13 @@ class UsersController extends Controller
       session()->flash('success','验证邮箱已发送到你的注册邮箱上，请注意查收。');
       return redirect('/');
     }
-    
+
     protected function sendEmailConfirmationTo($user)
     {
       $view='emails.confirm';
       $data=compact('user');
-      $from='aufree@yousails.com';
-      $name='Aufree';
+      $from='617997014@qq.com';
+      $name='617997014@qq.com';
       $to=$user->email;
       $subject="感谢注册Sample应用！请确认你的邮箱。";
 
